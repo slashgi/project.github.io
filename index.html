@@ -11,7 +11,6 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <title> CLICK CLICK CLICK CLICK CLICK</title>
       <script>
             var clickNum = 0;
             var score = 0;
@@ -93,38 +92,34 @@
                     alert("Whoops! you misclicked!");
                     clickNum = 0;
                     document.getElementById("buttonE").disabled = true;
-                     document.getElementById("score").innerHTML="You got a score of: "+score+"/5";
+                    document.getElementById("score").innerHTML="You got a score of: "+score+"/5";
                 }
             }
             
-       
+
+           
         </script>
         
         <style>
             h1{
-                font-family: Anton;
-                text-align: center;
-                font-size: 67px;
-                margin-left: 30%;
-                margin-right: 30%;
+            font-family: Anton;
+            text-align: center;
+            font-size: 64px;
+            margin-left: 35%;
+            margin-right: 30%;
+            
+
                }
                div{
                    margin-left: 23%;
                    margin-right: 25%;
                }
                
-            body{
-                background-color:rgb(182, 209, 225);
-                align-content: center;
-                text-align: center;
+           body{
+               background-color:rgb(182, 209, 225);
+               text-align: center;
            }
-                 p{
-                font-family: sans-serif;
-                font-size: 20px;
-             
-
-            }
-            .clickbutton {
+           .clickbutton {
                 display: inline-block;
                 padding: 25px 25px;
                 font-size: 45px;
@@ -160,7 +155,6 @@
                 margin: 5px;
             }
 
-
             h2{
                 font-family: Roboto;
                 color: black;
@@ -175,97 +169,106 @@
 
             }
             h4{
-                font-size: 35px;
+                font-size: 24px;
                 color: black;
-                text-decoration; 
                 text-align:center;
-                font-family: Roboto;
                 
             }
+            p{
+                font-family: sans-serif;
+                font-size: 20px;
+             
 
-            .container {
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                background-color:beige;
-                color: black;
+            }
+            
+
+            .footer {
+                position: sticky;
+                margin-left: auto; 
+                margin-right: auto;
+                padding: 10px;
+                background-color: coral;
+                color: white;
+                text-align: justify;
                 font-family: sans-serif;
                 font-size: 20px;
             }
+            
+            
         </style>
+        <title> CLICK CLICK CLICK CLICK CLICK</title>
     </head>
     <body>
-        <h1>GOTTA CLICK 'EM ALL</h1>
+        <h1>GOTTA CLICK EM ALL</h1>
       
 
         <br>
         <br>
 
-        <h4>If Bobby has 6 coins and Matthew has 2, how many coins does Bobby have over Matthew? </h4>  
+        <h4>If Bobby has 6 buttons, and Matthew has 2, then how many buttons does Bobby have over Matthew? </h4>  
         <div>    
-        <button onclick="clickClack()" class="clickbutton ">.....CLICK.....</button>
+        <button onclick="clickClack()" id="buttonA" class="clickbutton">.....CLICKED.....</button>
         <br>
         <br>
-        <button onclick="enterNumA()" class="checkbutton">CHECK</button>
+        <button onclick="enterNumA()" id="buttonA" class="checkbutton">CHECK</button>
         <br>
         <br>
         </div>
       
         <h4>How many letters are there in the alphabet? </h4>
         <div>      
-        <button onclick="clickClack()" class="clickbutton">.....CLICK.....</button>
+        <button onclick="clickClack()" id="buttonB" class="clickbutton">.....CLICKED.....</button>
         <br>
         <br>
-        <button onclick="enterNumB()" class="checkbutton">CHECK</button>
+        <button onclick="enterNumB()"  id="buttonB" class="checkbutton">CHECK</button>
         <br>
         <br>
     </div>
     
-        <h4>Out of 50 people, 10 people loved Italian food, 20 loved Mexican food, and 20 loved Indian food, how many people like eating pizza? </h4> 
+        <h4>Out of 50 people, 10 people loved Italian food, 20 love Mexican food, and 20 love Indian food, how many people like eating pizza? </h4> 
         <div>
-        <button onclick="clickClack()" class="clickbutton">.....CLICK.....</button>
+        <button onclick="clickClack()"  id="buttonC" class="clickbutton">.....CLICKED.....</button>
         <br>
         <br>
-        <button onclick="enterNumC()" class="checkbutton">CHECK</button>
+        <button onclick="enterNumC()"  id="buttonC" class="checkbutton">CHECK</button>
         <br>
         <br>
     </div>
 
         <h4>How many days are there in 2 weeks? </h4>   
         <div>  
-        <button onclick="clickClack()" class="clickbutton">.....CLICK.....</button>
+        <button onclick="clickClack()"  id="buttonD" class="clickbutton">.....CLICKED.....</button>
     
         <br>
         <br>
-
-        <button onclick="enterNumD()" class="checkbutton">CHECK</button>
+        <button onclick="enterNumD()"  id="buttonD" class="checkbutton">CHECK</button>
         <br>
         <br>
     </div>
 
-        <h4>What is the square root of 400? </h4>  
+        <h4>what is the square root of 400? </h4>  
         <div>
-        <button onclick="clickClack()" class="clickbutton">.....CLICK.....</button>
+        <button onclick="clickClack()"  id="buttonE" class="clickbutton">.....CLICKED.....</button>
         <br>
         <br>
-        <button onclick="enterNumE()" class="checkbutton">CHECK</button>
+        <button onclick="enterNumE()"  id="buttonE" class="checkbutton">CHECK</button>
      
         <br><br>
     </div>
-    <br>
-    <br>
-         <h4 id="score"> </h4>
+ 
         <br>
         <br>
+        <p id="score"> </p>
+        <h2> About Us
+            <br>
+            <p class="footer"> So you may be wondering? How do you win this game? Well simple. You are given 5 questions, you need to click as many times as the answer. For example, if the answer is 7, then you click 7 times. Answer the questions from top to bottom. This was inspired by Simon Says
+            <br>Benhur Capulong - <br>
+            <br>Natalja Nicolas - CSS<br>
+            <br>Jose Gabriel Serapio - HTML, JS<br>
+            </p>
+        </p>
+    
+        </h2>
+       
     </body>
-    <footer style="background-color: beige;">
-        <div class="container">
-            <h2>About Us:</h2>
-           You may be wondering? How do you win this game? Well simple. You are given 5 questions, you need to click as many times as the answer. For example, if the answer is 7, then you click 7 times. Answer the questions from top to bottom. This was inspired by Simon Says.
-            Members and their Contributions:
-            Benhur Capulong - 
-            Natalja Nicolas - CSS
-            Jose Gabriel Serapio - HTML, JS
-        </div>
-    </footer>
-   </html>
+    </html>
