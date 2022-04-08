@@ -116,6 +116,7 @@
                
             body{
                 background-color:rgb(182, 209, 225);
+                align-content: center;
            }
             .clickbutton {
                 display: inline-block;
@@ -142,7 +143,7 @@
             .checkbutton {
                 display: inline-block;
                 border-radius: 4px;
-                background-color: #f4511e;
+                background-color:#4CAF50;
                 border: none;
                 color: #FFFFFF;
                 text-align: center;
@@ -196,16 +197,21 @@
                 font-size: 24px;
                 color: black;
                 text-align:center;
+                font-family: Roboto;
                 
             }
-            p{
+
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color:beige;
+                color: black;
+                text-align: center;
                 font-family: sans-serif;
                 font-size: 20px;
-             
-
             }
-            
-            
         </style>
         <title> CLICK CLICK CLICK CLICK CLICK</title>
     </head>
@@ -267,12 +273,12 @@
      
         <br><br>
     </div>
- 
-        <br>
-        <br>
-        <p id="score"> </p>
+    <br>
+    <br>
+         <p id="score"> </p>   
+    <div class="footer">
         <h2> About Us</h2>
         <p> You may be wondering? How do you win this game? Well simple. You are given 5 questions, you need to click as many times as the answer. For example, if the answer is 7, then you click 7 times. Answer the questions from top to bottom. This was inspired by Simon Says.</p>
-    
+    </div>
     </body>
     </html>
